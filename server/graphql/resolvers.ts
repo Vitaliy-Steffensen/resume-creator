@@ -1,11 +1,14 @@
-const User = require("../models/user");
-console.log(User);
+import User from "../models/user";
 
 export default {
   Query: {
     getUsers: async () => {
       try {
-        const users = await User.findAll();
+        // let users = await db.User.findAll({});
+        const users = await User.findAll({
+          attributes: ["first_name", "last_name", "email"],
+          limit: 100,
+        });
         console.log("users ", users);
         // name of user as weill
         // where is the console?

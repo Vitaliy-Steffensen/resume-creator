@@ -22,7 +22,9 @@
     "pages/api/graphql.js",
     "server/graphql/resolvers.ts",
     "server/models/index.ts",
-    "pages/index.jsx"
+    "pages/index.jsx",
+    "server/migrations/20220426145430-create-user.js",
+    "server/models/user.js"
   ],
   "exclude": ["node_modules"]
 }
